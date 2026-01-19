@@ -1,0 +1,526 @@
+<!-- 
+FILE: training.html
+TIPE: HTML - Landing Page Portal Pelatihan Karang Taruna
+DESKRIPSI: Halaman portal pelatihan dengan tampilan seperti LMS universitas
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- BAGIAN: Metadata & Resources -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Pelatihan - Karang Taruna Learning Management System</title>
+    
+    <!-- BAGIAN: Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/training.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- BAGIAN: Header & Navigation Bar -->
+    <header class="training-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Karang Taruna" height="50">
+                <div class="logo-text">
+                    <h1>KARANG TARUNA</h1>
+                    <p class="subtitle">Learning Management System</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="activities.html"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="training.html" class="active"><i class="fas fa-graduation-cap"></i> Pelatihan</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+                <li class="nav-user">
+                    <a href="#login" class="btn-login">
+                        <i class="fas fa-user-circle"></i> Masuk
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BAGIAN: Hero Section Portal Pelatihan -->
+    <section class="training-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Portal Pelatihan Digital Karang Taruna</h1>
+                    <p class="hero-subtitle">Tingkatkan kompetensi dan keterampilan dengan sistem pembelajaran modern</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>50+</h3>
+                                <p>Materi Pelatihan</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>1,200+</h3>
+                                <p>Peserta Aktif</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h3>850+</h3>
+                                <p>Sertifikat Terbit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#courses" class="btn btn-primary btn-large">
+                        <i class="fas fa-play-circle"></i> Mulai Belajar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN: Breadcrumb Navigation -->
+    <div class="breadcrumb container">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><i class="fas fa-chevron-right"></i></li>
+            <li><a href="training.html" class="active">Portal Pelatihan</a></li>
+        </ul>
+    </div>
+
+    <!-- BAGIAN: Main Content Area -->
+    <main class="training-main container">
+        <div class="training-wrapper">
+            <!-- BAGIAN: Sidebar Menu -->
+            <aside class="training-sidebar">
+                <div class="sidebar-card">
+                    <h3><i class="fas fa-tachometer-alt"></i> Dashboard</h3>
+                    <ul class="sidebar-menu">
+                        <li class="active"><a href="#"><i class="fas fa-home"></i> Beranda LMS</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Kursus Saya</a></li>
+                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Jadwal</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Tugas</a></li>
+                        <li><a href="#"><i class="fas fa-chart-bar"></i> Progress</a></li>
+                        <li><a href="#"><i class="fas fa-certificate"></i> Sertifikat</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3><i class="fas fa-fire"></i> Trending Kursus</h3>
+                    <ul class="trending-courses">
+                        <li>
+                            <a href="#">
+                                <span class="course-badge">Hot</span>
+                                Digital Marketing 101
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="course-badge">New</span>
+                                Web Development Basic
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kewirausahaan Digital
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Public Speaking Mastery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3><i class="fas fa-calendar-check"></i> Jadwal Hari Ini</h3>
+                    <div class="schedule-today">
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 - 11:00</div>
+                            <div class="schedule-title">Workshop UI/UX Design</div>
+                            <div class="schedule-status online">Online</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">13:00 - 15:00</div>
+                            <div class="schedule-title">Digital Marketing Strategy</div>
+                            <div class="schedule-status offline">Offline</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- BAGIAN: Main Content -->
+            <section class="training-content">
+                <!-- BAGIAN: Welcome Message & Quick Actions -->
+                <div class="welcome-card">
+                    <div class="welcome-header">
+                        <div>
+                            <h2>Selamat Datang, <span class="user-name">Peserta Pelatihan</span>!</h2>
+                            <p>Senang bertemu dengan Anda lagi. Mari lanjutkan pembelajaran Anda.</p>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Peserta+Training&background=3498db&color=fff" alt="User Avatar">
+                        </div>
+                    </div>
+                    <div class="quick-actions">
+                        <a href="#" class="action-card">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lanjutkan Belajar</span>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-tasks"></i>
+                            <span>Tugas Baru</span>
+                            <span class="badge">3</span>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-comments"></i>
+                            <span>Forum Diskusi</span>
+                        </a>
+                        <a href="#" class="action-card">
+                            <i class="fas fa-download"></i>
+                            <span>Download Materi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BAGIAN: Featured Courses -->
+                <div class="section-header" id="courses">
+                    <h2><i class="fas fa-star"></i> Kursus Unggulan</h2>
+                    <a href="#" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Digital Marketing">
+                            <div class="course-level intermediate">Intermediate</div>
+                            <div class="course-duration">
+                                <i class="far fa-clock"></i> 8 Minggu
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Digital Marketing</div>
+                            <h3 class="course-title">Digital Marketing Mastery 2024</h3>
+                            <p class="course-description">Pelajari strategi pemasaran digital terbaru untuk meningkatkan bisnis Anda.</p>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i> 245 Peserta
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-star"></i> 4.8/5.0
+                                </div>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span>65% Complete</span>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-play"></i> Lanjutkan
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-info-circle"></i> Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Web Development">
+                            <div class="course-level beginner">Beginner</div>
+                            <div class="course-duration">
+                                <i class="far fa-clock"></i> 12 Minggu
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Web Development</div>
+                            <h3 class="course-title">Full-Stack Web Developer Bootcamp</h3>
+                            <p class="course-description">Belajar membuat website modern dari nol hingga mahir.</p>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i> 189 Peserta
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-star"></i> 4.9/5.0
+                                </div>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 30%"></div>
+                                </div>
+                                <span>30% Complete</span>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-play"></i> Lanjutkan
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-info-circle"></i> Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Entrepreneurship">
+                            <div class="course-level advanced">Advanced</div>
+                            <div class="course-duration">
+                                <i class="far fa-clock"></i> 6 Minggu
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Entrepreneurship</div>
+                            <h3 class="course-title">Startup Founder Masterclass</h3>
+                            <p class="course-description">Pelajari cara membangun dan mengembangkan startup dari ide hingga sukses.</p>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i> 156 Peserta
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-star"></i> 4.7/5.0
+                                </div>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span>Belum Dimulai</span>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-play"></i> Mulai
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-info-circle"></i> Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAGIAN: Live Classes Section -->
+                <div class="section-header">
+                    <h2><i class="fas fa-video"></i> Kelas Live Mendatang</h2>
+                    <a href="#" class="view-all">Lihat Kalender <i class="fas fa-calendar-alt"></i></a>
+                </div>
+
+                <div class="live-classes">
+                    <div class="live-class-card">
+                        <div class="live-class-header">
+                            <div class="live-class-time">
+                                <div class="time">14:00</div>
+                                <div class="date">Hari Ini</div>
+                            </div>
+                            <div class="live-class-info">
+                                <h3>Workshop: Content Creation for Social Media</h3>
+                                <p><i class="fas fa-user"></i> Andi Wijaya - Senior Content Creator</p>
+                            </div>
+                            <div class="live-class-status">
+                                <span class="badge live">Live Soon</span>
+                                <a href="#" class="btn btn-small">
+                                    <i class="fas fa-calendar-plus"></i> Reminder
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="live-class-card">
+                        <div class="live-class-header">
+                            <div class="live-class-time">
+                                <div class="time">10:00</div>
+                                <div class="date">Besok</div>
+                            </div>
+                            <div class="live-class-info">
+                                <h3>Webinar: Digital Payment Security</h3>
+                                <p><i class="fas fa-user"></i> Dr. Sarah Miller - Security Expert</p>
+                            </div>
+                            <div class="live-class-status">
+                                <span class="badge upcoming">Upcoming</span>
+                                <a href="#" class="btn btn-small">
+                                    <i class="fas fa-calendar-plus"></i> Reminder
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAGIAN: Learning Paths -->
+                <div class="section-header">
+                    <h2><i class="fas fa-road"></i> Learning Paths</h2>
+                    <a href="#" class="view-all">Semua Path <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="learning-paths">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="path-content">
+                            <h3>Frontend Developer Path</h3>
+                            <p>6 kursus • 8 bulan • Sertifikat</p>
+                            <div class="path-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                                <span>2/6 kursus selesai</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline">Lanjutkan Path</a>
+                    </div>
+
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="path-content">
+                            <h3>Digital Marketer Path</h3>
+                            <p>5 kursus • 6 bulan • Sertifikat</p>
+                            <div class="path-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span>3/5 kursus selesai</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline">Lanjutkan Path</a>
+                    </div>
+                </div>
+
+                <!-- BAGIAN: Announcements -->
+                <div class="section-header">
+                    <h2><i class="fas fa-bullhorn"></i> Pengumuman</h2>
+                    <a href="#" class="view-all">Arsip <i class="fas fa-archive"></i></a>
+                </div>
+
+                <div class="announcements">
+                    <div class="announcement-card important">
+                        <div class="announcement-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Maintenance Sistem - 25 Jan 2024</h3>
+                            <p class="announcement-date">Diposting: 20 Jan 2024 oleh Admin</p>
+                            <p>Sistem akan dilakukan maintenance pada tanggal 25 Januari 2024 pukul 00:00 - 04:00 WIB. Harap simpan pekerjaan Anda sebelum waktu tersebut.</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Batch Baru Pelatihan Digital Marketing</h3>
+                            <p class="announcement-date">Diposting: 18 Jan 2024 oleh Admin</p>
+                            <p>Pendaftaran batch baru pelatihan Digital Marketing dibuka mulai 22 Januari 2024. Kuota terbatas untuk 50 peserta pertama.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAGIAN: External LMS Integration -->
+                <div class="integration-card">
+                    <div class="integration-content">
+                        <h2><i class="fas fa-external-link-alt"></i> Akses Full Learning Management System</h2>
+                        <p>Untuk pengalaman belajar yang lebih lengkap dengan fitur quiz, assignment, forum diskusi, dan tracking progress yang detail, akses portal LMS kami yang terpisah.</p>
+                        <div class="integration-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Progress Tracking Detail</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Forum Diskusi Interaktif</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quiz & Assignment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sertifikat Digital</span>
+                            </div>
+                        </div>
+                        <a href="https://blackjugan22022001.github.io/KRandhiaksa.github.io/" 
+                           class="btn btn-primary btn-large integration-btn" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Buka Portal LMS Utama
+                        </a>
+                    </div>
+                    <div class="integration-image">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="LMS Portal">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- BAGIAN: Footer -->
+    <footer class="training-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3><i class="fas fa-graduation-cap"></i> Portal Pelatihan</h3>
+                        <p>Sistem pembelajaran digital untuk pengembangan kompetensi pemuda Karang Taruna.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Kategori Kursus</h3>
+                        <ul>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Data Science</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Soft Skills</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Link Cepat</h3>
+                        <ul>
+                            <li><a href="#">Katalog Kursus</a></li>
+                            <li><a href="#">Jadwal Pelatihan</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Kontak</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-envelope"></i> training@karangtaruna.org</li>
+                            <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                            <li><i class="fas fa-clock"></i> Senin - Jumat: 08:00 - 17:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Karang Taruna Learning Management System. All rights reserved.</p>
+                <p class="footer-credits">Versi 2.1.0 | Terakhir diperbarui: Januari 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BAGIAN: JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/training.js"></script>
+</body>
+</html>

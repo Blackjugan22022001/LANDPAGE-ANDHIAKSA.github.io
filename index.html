@@ -1,0 +1,183 @@
+<!-- 
+FILE: index.html
+TIPE: HTML - Halaman Utama Website Karang Taruna
+DESKRIPSI: Halaman utama dengan slideshow hero section, navigasi, dan konten pengenalan
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- BAGIAN: Metadata & Resources -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karang Taruna - Beranda</title>
+    
+    <!-- BAGIAN: Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- BAGIAN: Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Karang Taruna" height="50">
+                <h1>KARANG TARUNA</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="activities.html"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="training.html"><i class="fas fa-graduation-cap"></i> Pelatihan</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BAGIAN: Hero Slideshow Section -->
+    <section class="hero-slideshow">
+        <div class="slideshow-container">
+            <!-- Slide 1: Gambar Sekolah -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7)), url('images/camera1.jpg');">
+                <div class="slide-content">
+                    <div class="slide-overlay">
+                        <h2>MUDA MUDI "ANDHIAKSA"</h2>
+                        <p>Dk. Klenisan RT 03 RW 04 Geneng Gatak Sukoharjo</p>
+                        <p>Telp/Fax: -</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2: Gambar Industri -->
+            <div class="slide" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7)), url('images/cr2.jpg');">
+                <div class="slide-content">
+                    <div class="slide-overlay">
+                        <h2> </h2>
+                        <p> </p>
+                        <p class="brand">Acara 17san</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3: Karang Taruna -->
+            <div class="slide" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7)), url('images/CR3.jpg');">
+                <div class="slide-content">
+                    <div class="hero-content">
+                        <h2>Selamat Datang di Landing Page Karang Taruna"Andhiaksa"</h2>
+                        <p>Wadah pengembangan generasi muda untuk berkontribusi dalam pembangunan masyarakat</p>
+                        <a href="about.html" class="btn">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BAGIAN: Navigation Buttons Slideshow -->
+            <button class="slide-nav prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slide-nav next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- BAGIAN: Dots Indicator Slideshow -->
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN: Features/Aktivitas Section -->
+    <section class="features">
+        <h2>Aktivitas Kami</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Kegiatan Sosial</h3>
+                <p>Program pemberdayaan masyarakat dan bakti sosial</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Pelatihan & Workshop</h3>
+                <p>Pengembangan skill pemuda melalui berbagai pelatihan</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Event Rutin</h3>
+                <p>Kegiatan bulanan dan tahunan untuk pemuda</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Komunitas</h3>
+                <p>Wadah silaturahmi dan jejaring pemuda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN: Berita Terbaru Section -->
+    <section class="news">
+        <h2>Berita Terbaru</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-date">15 Jan 2024</div>
+                <h3>Pelatihan Digital Marketing</h3>
+                <p>Karang Taruna menyelenggarakan pelatihan digital marketing untuk UMKM...</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+            </div>
+            <div class="news-card">
+                <div class="news-date">10 Jan 2024</div>
+                <h3>Bakti Sosial di Panti Asuhan</h3>
+                <p>Kegiatan bakti sosial dan pembagian sembako di panti asuhan...</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+            </div>
+            <div class="news-card">
+                <div class="news-date">5 Jan 2024</div>
+                <h3>Workshop Kewirausahaan</h3>
+                <p>Pelatihan kewirausahaan untuk pemuda desa dengan narasumber profesional...</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN: Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Karang Taruna</h3>
+                <p>Membangun generasi muda yang kreatif, inovatif, dan berkarakter.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="activities.html">Galeri</a></li>
+                    <li><a href="training.html">Pelatihan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Dk. Klenisan RT 03 RW 04 Geneng Gatak Sukoharjo </p>
+                <p><i class="fas fa-phone"></i> Takono Ketuane</p>
+                <p><i class="fas fa-envelope"></i> info@karangtaruna-jombang.org</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Karang Taruna ANDHIAKSA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- BAGIAN: JavaScript Files -->
+    <script src="js/script.js"></script>
+</body>
+</html>

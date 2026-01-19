@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan - Karang Taruna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (sama seperti index.html) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Karang Taruna" height="50">
+                <h1>KARANG TARUNA</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="activities.html" class="active"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="training.html"><i class="fas fa-graduation-cap"></i> Pelatihan</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Galeri Section -->
+    <section class="gallery-container">
+        <div class="hero" style="height: 300px; margin-top: 70px;">
+            <div class="hero-content">
+                <h2>Galeri Kegiatan</h2>
+                <p>Dokumentasi berbagai aktivitas dan program Karang Taruna</p>
+            </div>
+        </div>
+
+        <div style="max-width: 1200px; margin: 3rem auto; padding: 0 20px;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">
+                Terhubung dengan Google Foto
+            </h2>
+            
+            <!-- Instruksi Google Foto -->
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 3rem;">
+                <h3><i class="fas fa-info-circle" style="color: #3498db;"></i> Cara Menggunakan:</h3>
+                <p>1. Buat album di <strong>Google Foto</strong> untuk Karang Taruna</p>
+                <p>2. Atur album menjadi <strong>"Public"</strong> atau "Anyone with link"</p>
+                <p>3. Salin link album dan tempel di bawah ini:</p>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 5px; margin-top: 1rem;">
+                    <h4>Link Album Google Foto:</h4>
+                    <input type="text" id="googlePhotosLink" 
+                           placeholder="https://photos.app.goo.gl/xxxxx" 
+                           style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <button onclick="loadGooglePhotos()" class="btn" style="margin-top: 10px;">
+                        <i class="fas fa-sync-alt"></i> Muat Galeri
+                    </button>
+                </div>
+            </div>
+
+            <!-- Container untuk gambar dari Google Foto -->
+            <div id="googlePhotosContainer" class="gallery-grid">
+                <!-- Gambar akan dimuat di sini via JavaScript -->
+                <div class="placeholder" style="text-align: center; padding: 3rem; color: #666;">
+                    <i class="fas fa-images" style="font-size: 3rem; color: #ddd; margin-bottom: 1rem;"></i>
+                    <p>Galeri akan muncul di sini setelah memasang link Google Foto</p>
+                </div>
+            </div>
+
+            <!-- Backup Local Gallery -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Galeri Lokal (Cadangan)</h3>
+                <div class="gallery-grid">
+                    <!-- Contoh gambar lokal -->
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300/3498db/ffffff?text=Kegiatan+1" alt="Kegiatan 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300/2ecc71/ffffff?text=Kegiatan+2" alt="Kegiatan 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=Kegiatan+3" alt="Kegiatan 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (sama seperti index.html) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Karang Taruna</h3>
+                <p>Membangun generasi muda yang kreatif, inovatif, dan berkarakter.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="activities.html">Galeri</a></li>
+                    <li><a href="training.html">Pelatihan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Alamat Karang Taruna</p>
+                <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@karangtaruna.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Karang Taruna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script> <!-- File terpisah untuk Google Photos -->
+</body>
+</html>
